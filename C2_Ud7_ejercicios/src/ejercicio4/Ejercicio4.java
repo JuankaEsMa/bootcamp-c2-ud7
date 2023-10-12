@@ -234,6 +234,16 @@ public class Ejercicio4 {
 			System.out.println("Cantidad: ");
 			cantidad = sc.next();
 		}
+		System.out.println("Escriba el Iva: ");
+		String iva = sc.next();
+		while(!isNumeric(iva)) {
+			System.out.println("El Iva ha de ser 21 o 4");
+			System.out.println("Iva: ");
+			cantidad = sc.next();
+		}
+		if(!iva.equals("4")) {
+			iva = "21";
+		}
 
 	}
 
